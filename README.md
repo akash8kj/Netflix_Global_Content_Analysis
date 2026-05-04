@@ -80,7 +80,7 @@ Limitations
 
 Project Structure
 
-project-name/
+Netflix_Global_Content_Analysis/
 │├── dashboard/
 │   ├── dashboard_page1.png
 │   └── dashboard_page2.png
