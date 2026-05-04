@@ -85,8 +85,8 @@ project-name/
 │   ├── dashboard_page1.png
 │   └── dashboard_page2.png
 | ├── data/
-│   ├── netflix_titles.csv
-│   └── netflix_cleaned.csv
+│   ├── netflix_cleaned.csv
+│   └── netflix_titles.csv
 │
 ├── notebooks/
 │   └── data_cleaning_Netflix.ipynb
