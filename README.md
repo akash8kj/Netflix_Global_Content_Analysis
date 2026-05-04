@@ -81,8 +81,10 @@ Limitations
 Project Structure
 
 project-name/
-│
-├── data/
+│├── dashboard/
+│   ├── dashboard_page1.png
+│   └── dashboard_page2.png
+| ├── data/
 │   ├── netflix_titles.csv
 │   └── netflix_cleaned.csv
 │
@@ -90,11 +92,8 @@ project-name/
 │   └── data_cleaning_Netflix.ipynb
 │
 ├── sql/
-│   └── analysis.sql
+│   └── Analysis.sql
 │
-├── dashboard/
-│   ├── dashboard_page1.png
-│   └── dashboard_page2.png
 │
 ├── sql_output/
 │   ├── movies_vs_tv_query.png
