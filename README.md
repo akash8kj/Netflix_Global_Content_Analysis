@@ -2,7 +2,9 @@
 
 Overview
 
-This project analyzes Netflix’s global content dataset using a complete data analysis workflow, including data cleaning, SQL-based analysis, and dashboard visualization.
+This project analyzes Netflix’s global content dataset using an end-to-end data workflow, including data cleaning, SQL-based analysis, and dashboard visualization.
+
+The objective is to identify content trends, audience targeting patterns, and platform growth behavior.
 
 ---
 
@@ -10,35 +12,35 @@ Tools & Technologies
 
 - Python (Google Colab) – Data Cleaning
 - SQL (SQLite) – Data Analysis
-- Power BI – Data Visualization
+- Power BI – Dashboard Visualization
 
 ---
 
 Data Cleaning (Python)
 
-The dataset contained missing and inconsistent values.
+The dataset contained missing and inconsistent values that could affect analysis.
 
 Steps performed:
 
 - Removed records with missing or unknown country
 - Handled null and inconsistent values
-- Prepared a clean dataset for analysis
+- Standardized data for analysis
 
 Impact:
-Data cleaning reduced total records and affected distributions (ratings, countries, etc.), resulting in more reliable insights.
+Cleaning improved data reliability but reduced total records, slightly affecting distributions such as ratings and country representation.
 
 ---
 
 Data Analysis (SQL)
 
-Performed analysis on the cleaned dataset:
+Performed structured queries on the cleaned dataset to extract key insights:
 
 - Total number of titles
 - Movies vs TV Shows distribution
-- Country-wise content analysis
+- Country-wise content contribution
 - Ratings distribution
 
-SQL outputs:
+SQL Outputs:
 
 - "movies_vs_tv_query.png"
 - "ratings_distribution_query.png"
@@ -48,43 +50,56 @@ SQL outputs:
 
 Dashboard (Power BI)
 
-The dashboard includes:
+The dashboard provides a visual summary of content trends and platform behavior.
+
+Key Components:
 
 - KPIs: Total Titles, Movies, TV Shows
 - Ratings distribution by content type
 - Content added over time
 - Movie duration distribution
 
-Dashboard files:
+Dashboard Preview:
 
-- "dashboard_page1.png"
-- "dashboard_page2.png"
+Page 1 – Content Overview
+
+"Dashboard Page 1" (dashboard/dashboard_page1.png)
+
+Page 2 – Trend & Analysis
+
+"Dashboard Page 2" (dashboard/dashboard_page2.png)
 
 ---
 
 Key Insights
 
-- Content growth accelerated after 2015, especially for TV Shows
-- Movies dominate overall content, but TV Shows are steadily increasing
-- Most content falls under mature ratings (TV-MA, TV-14)
-- Majority of movies are between 80–110 minutes
+- Content additions increased rapidly after 2015, indicating aggressive platform expansion and rising competition in the streaming industry.
+
+- Movies dominate the overall catalog, but TV Shows show consistent growth, suggesting a strategic shift toward long-form content for higher engagement.
+
+- Content is heavily concentrated in mature ratings (TV-MA, TV-14), indicating a primary focus on adult audiences.
+
+- Movie durations are mostly standardized between 80–110 minutes, reflecting an optimized format for viewer retention.
 
 ---
 
 Limitations
 
-- Dataset contains missing values (e.g., country, director)
-- Analysis is based on cleaned data after removing incomplete records
+- Missing values (e.g., country, director) required removal of some records
+- Insights are based on cleaned data and may not fully represent the original dataset
 
 ---
 
 Project Structure
 
 Netflix_Global_Content_Analysis/
-│├── dashboard/
+│
+├── dashboard/
+│   ├── Netflix_Analysis.pbix
 │   ├── dashboard_page1.png
 │   └── dashboard_page2.png
-| ├── data/
+│
+├── data/
 │   ├── netflix_cleaned.csv
 │   └── netflix_titles.csv
 │
@@ -93,7 +108,6 @@ Netflix_Global_Content_Analysis/
 │
 ├── sql/
 │   └── Analysis.sql
-│
 │
 ├── sql_output/
 │   ├── movies_vs_tv_query.png
@@ -106,13 +120,14 @@ Netflix_Global_Content_Analysis/
 
 Note
 
-If the dataset preview is not visible on GitHub, download the CSV file to view it locally.
+- If dataset preview is not visible on GitHub, download the CSV files for full access.
+- The Power BI file ("Netflix_Analysis.pbix") is available in the "/dashboard" folder and can be opened locally for full interaction.
 
 ---
 
 Conclusion
 
-This project demonstrates a structured data analysis workflow and highlights how data cleaning directly impacts insights.
+This project demonstrates how a structured data analysis workflow—from cleaning to visualization—can uncover meaningful insights about content strategy and platform growth.
 
 ---
 
