@@ -42,9 +42,11 @@ Performed structured queries on the cleaned dataset to extract key insights:
 
 SQL Outputs:
 
+
+-"country_analysis.png"
 - "movies_vs_tv_query.png"
 - "ratings_distribution_query.png"
-- "country_analysis.png"
+  
 
 ---
 
