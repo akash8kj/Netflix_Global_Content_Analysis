@@ -118,7 +118,7 @@ Netflix_Global_Content_Analysis/
 │   └── netflix_titles.csv
 │
 ├── notebooks/
-│   └── data_cleaning_Netflix.ipynb
+│   └── Data_Cleaning_Netflix_Titles_Dataset.ipynb
 │
 ├── sql/
 │   └── Analysis.sql
